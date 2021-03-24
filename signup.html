@@ -41,6 +41,7 @@
       margin-left:350px;
       margin-right:350px;
       background-color:deepskyblue;
+      font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
 
@@ -84,19 +85,24 @@
                 <form class="rounded">
                   <h1>SignUp</h1>
                   <p>Username:</p>
+                
                   <input onKeyPress={this.inputKeyPress} onChange={this.updateResponse1} value={this.state.uname} type="text" name="username" placeholder="User Name" />
+                  <br></br>
+                  <p>Email address:</p>
+                  <input onKeyPress={this.inputKeyPress} onChange={this.updateResponse2} value={this.state.password} type="Text"  placeholder="email id" />
                   <br></br>
                   <p>Password:</p>
                   <input onKeyPress={this.inputKeyPress} onChange={this.updateResponse2} value={this.state.password} type="password" name="password" placeholder="Password" />
-                  <br></br>
-                  <p>DOB:</p>
-                  <input type="date"  placeholder="Date of Birth" />
                   <br></br>
                   <p>Mobile Number:</p>
 
                 <input type="tel" placeholder='Enter your Mobile Number' name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
 
                   <br></br>
+                  <p>Date of Birth:</p>
+                  <input type="date"/>
+                  <br></br>
+                  
                   <br></br>
                   <button onClick={this.resetGame} onChange={this.updateResponse3} value={this.state.ans}>Submit</button>
                   <br></br>
